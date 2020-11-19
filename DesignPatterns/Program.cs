@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPatternsLib;
 
 namespace DesignPatterns
 {
@@ -6,7 +7,7 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new FactoryMethodApplication().Run();
         }
     }
 }
