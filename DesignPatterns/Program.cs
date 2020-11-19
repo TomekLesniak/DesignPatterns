@@ -1,5 +1,7 @@
 ﻿using System;
 using DesignPatternsLib;
+using DesignPatternsLib.Abstract;
+using DesignPatternsLib.Factory;
 
 namespace DesignPatterns
 {
@@ -7,7 +9,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            new FactoryMethodApplication().Run();
+            //new FactoryMethodApplication().Run();
+            new AbstractFactoryApplication().Run();
         }
     }
 }

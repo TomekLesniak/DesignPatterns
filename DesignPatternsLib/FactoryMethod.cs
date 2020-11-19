@@ -1,17 +1,21 @@
 ﻿using System;
 
-namespace DesignPatternsLib
+namespace DesignPatternsLib.Factory
 {
     public class FactoryMethodApplication
     {
         private Dialog _dialog;
+
         public void Run()
         {
-            Console.WriteLine("\n====================================================================================\n");
+            Console.WriteLine(
+                "\n====================================================================================\n");
             Console.WriteLine("\t\tFACTORY METHOD");
-            Console.WriteLine("\tProvides an interface for creating objects in base class, but\n\tallows derived class to change type of objects that will be created.\n");
+            Console.WriteLine(
+                "\tProvides an interface for creating objects in base class, but\n\tallows derived class to change type of objects that will be created.\n");
             Console.WriteLine("\tWhen to use?");
-            Console.WriteLine("\tIf you don`t know exact types and dependencies of the objects\n\tyour code will work with\n");
+            Console.WriteLine(
+                "\tIf you don`t know exact types and dependencies of the objects\n\tyour code will work with\n");
             Console.WriteLine("\tIf you want your users to easily extend internal components\n");
             Console.WriteLine("\tIf you want to reuse existing objects\n");
             _dialog = new WindowsDialog();
@@ -27,7 +31,8 @@ namespace DesignPatternsLib
             _dialog = new LinuxDialog();
             _dialog.Render();
 
-            Console.WriteLine("\n====================================================================================\n");
+            Console.WriteLine(
+                "\n====================================================================================\n");
 
         }
     }
