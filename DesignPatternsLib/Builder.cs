@@ -12,7 +12,7 @@ namespace DesignPatternsLib.Builder
                 "\n====================================================================================\n");
             Console.WriteLine("\t\tBUILDER");
             Console.WriteLine(
-                "\tConstruct complex objects step by step. Allows to produce different representations \n\tof an object using same construction code.\n");
+                "\tConstruct complex objects step by step. Allows to produce different representations \n\tof an object using same construction code.");
             Console.WriteLine("\n\tWhen to use?");
             Console.WriteLine("\tIf you have really long constructors");
             Console.WriteLine("\tIf you want to create different representations of same product\n");
@@ -61,7 +61,7 @@ namespace DesignPatternsLib.Builder
 
         public override string ToString()
         {
-            return $"Seats: {_seats} Engine: {_engineType} TripComputer: {_hasTripComputer} GPS: {_hasGps}";
+            return $"\tSeats: {_seats} Engine: {_engineType} TripComputer: {_hasTripComputer} GPS: {_hasGps}";
         }
     }
 

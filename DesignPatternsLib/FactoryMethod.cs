@@ -16,7 +16,7 @@ namespace DesignPatternsLib.Factory
             Console.WriteLine("\tWhen to use?");
             Console.WriteLine(
                 "\tIf you don`t know exact types and dependencies of the objects\n\tyour code will work with\n");
-            Console.WriteLine("\tIf you want your users to easily extend internal components\n");
+            Console.WriteLine("\tIf you want your users to easily extend internal components");
             Console.WriteLine("\tIf you want to reuse existing objects\n");
             _dialog = new WindowsDialog();
             _dialog.Render();
@@ -83,12 +83,12 @@ namespace DesignPatternsLib.Factory
     {
         public void Render()
         {
-            Console.WriteLine("Rendering Windows Button on the screen");
+            Console.WriteLine("\tRendering Windows Button on the screen");
         }
 
         public void OnClick()
         {
-            Console.WriteLine("Windows Button was clicked.");
+            Console.WriteLine("\tWindows Button was clicked.");
         }
     }
 
@@ -96,12 +96,12 @@ namespace DesignPatternsLib.Factory
     {
         public void Render()
         {
-            Console.WriteLine("Rendering HtmlButton on the screen");
+            Console.WriteLine("\tRendering HtmlButton on the screen");
         }
 
         public void OnClick()
         {
-            Console.WriteLine("Html button was clicked");
+            Console.WriteLine("\tHtml button was clicked");
         }
     }
 
@@ -109,12 +109,12 @@ namespace DesignPatternsLib.Factory
     {
         public void Render()
         {
-            Console.WriteLine("Rendering Linux Button on the screen");
+            Console.WriteLine("\tRendering Linux Button on the screen");
         }
 
         public void OnClick()
         {
-            Console.WriteLine("Linux button was clicked");
+            Console.WriteLine("\tLinux button was clicked");
         }
     }
 }

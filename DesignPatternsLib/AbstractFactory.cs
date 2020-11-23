@@ -83,7 +83,7 @@ namespace DesignPatternsLib.Abstract
     {
         public void Paint()
         {
-            Console.WriteLine("Painting Windows Button");
+            Console.WriteLine("\tPainting Windows Button");
         }
     }
 
@@ -91,7 +91,7 @@ namespace DesignPatternsLib.Abstract
     {
         public void Paint()
         {
-            Console.WriteLine("Painting Mac Button");
+            Console.WriteLine("\tPainting Mac Button");
         }
     }
 
@@ -104,7 +104,7 @@ namespace DesignPatternsLib.Abstract
     {
         public void Paint()
         {
-            Console.WriteLine("Painting Windows Checkbox");
+            Console.WriteLine("\tPainting Windows Checkbox");
         }
     }
 
@@ -112,7 +112,7 @@ namespace DesignPatternsLib.Abstract
     {
         public void Paint()
         {
-            Console.WriteLine("Painting Mac Checkbox");
+            Console.WriteLine("\tPainting Mac Checkbox");
         }
     }
 }
