@@ -27,6 +27,10 @@ namespace DesignPatterns
 
             PrintCreationalTextBetween(4, "Prototype");
             new PrototypeApplication().Run();
+
+            PrintCreationalTextBetween(5, "Singleton");
+            new SingletonApplication().Run();
+
             #endregion
 
         }
