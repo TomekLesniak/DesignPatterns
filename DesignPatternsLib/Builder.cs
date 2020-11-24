@@ -4,16 +4,21 @@ using System.Text;
 
 namespace DesignPatternsLib.Builder
 {
-    public class BuilderApplication
+    public class BuilderApplication : ConsoleDecorator
     {
         public void Run()
         {
+            
             Console.WriteLine(
                 "\n====================================================================================\n");
+            UseAccentColor();
             Console.WriteLine("\t\tBUILDER");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tConstruct complex objects step by step. Allows to produce different representations \n\tof an object using same construction code.");
+            UseAccentColor();
             Console.WriteLine("\n\tWhen to use?");
+            UsePrimaryColor();
             Console.WriteLine("\tIf you have really long constructors");
             Console.WriteLine("\tIf you want to create different representations of same product\n");
 
@@ -42,6 +47,7 @@ namespace DesignPatternsLib.Builder
             Console.WriteLine(
                 "\n====================================================================================\n");
         }
+
     }
 
     public class Car

@@ -4,16 +4,20 @@ using System.Text;
 
 namespace DesignPatternsLib.Prototype
 {
-    public class PrototypeApplication
+    public class PrototypeApplication : ConsoleDecorator
     {
         public void Run()
         {
             Console.WriteLine(
                 "\n====================================================================================\n");
+            UseAccentColor();
             Console.WriteLine("\t\tPROTOTYPE");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tLets you copy existing objects without making code dependent on their classes\n\tRemember that copying is often impossible, as you work with interface not implementation ");
+            UseAccentColor();
             Console.WriteLine("\n\tWhen to use?");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tIf you want to copy object without depending on it");
             Console.WriteLine(

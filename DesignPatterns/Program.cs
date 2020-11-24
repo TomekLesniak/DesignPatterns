@@ -12,9 +12,10 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            UsePrimaryColor();
 
             #region CreationalPatterns
-            
+
             PrintIntroductionTo("CREATIONAL DESIGN PATTERNS");
             PrintCreationalTextBetween(1, "Factory Method");
             new FactoryMethodApplication().Run();
@@ -39,7 +40,9 @@ namespace DesignPatterns
         {
             Console.WriteLine(
                 "\n====================================================================================\n");
+            UseAccentColor();
             Console.WriteLine($"\t\t\t{patternsCategory}");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\n====================================================================================");
             Console.WriteLine(
@@ -48,7 +51,19 @@ namespace DesignPatterns
 
         private static void PrintCreationalTextBetween(int index, string patternName)
         {
+            UseAccentColor();
             Console.WriteLine($"\t\t    CREATIONAL PATTERN {index}/5 - {patternName}");
+            UsePrimaryColor();
+        }
+
+        private static void UseAccentColor()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+        }
+
+        private static void UsePrimaryColor()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
         }
     }
 }

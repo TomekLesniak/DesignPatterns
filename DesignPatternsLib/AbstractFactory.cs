@@ -4,17 +4,21 @@ using System.Text;
 
 namespace DesignPatternsLib.Abstract
 {
-    public class AbstractFactoryApplication
+    public class AbstractFactoryApplication : ConsoleDecorator
     {
         
         public void Run()
         {
             Console.WriteLine(
                 "\n====================================================================================\n");
+            UseAccentColor();
             Console.WriteLine("\t\tABSTRACT FACTORY");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tProduce families of related objects(e.g GUI, furniture, car types etc) \n\twithout specifying their concrete classes");
+            UseAccentColor();
             Console.WriteLine("\n\tWhen to use?");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tIf code need to work with various families of related products and \n\tyou don`t want to depend on concrete classes - extensibility\n");
 

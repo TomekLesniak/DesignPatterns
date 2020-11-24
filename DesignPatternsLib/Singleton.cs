@@ -4,16 +4,20 @@ using System.Text;
 
 namespace DesignPatternsLib
 {
-    public class SingletonApplication
+    public class SingletonApplication : ConsoleDecorator
     {
         public void Run()
         {
             Console.WriteLine(
                 "\n====================================================================================\n");
+            UseAccentColor();
             Console.WriteLine("\t\tSINGLETON");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tEnsure that class has only one instance, while providing global access point to that instance");
+            UseAccentColor();
             Console.WriteLine("\n\tWhen to use?");
+            UsePrimaryColor();
             Console.WriteLine(
                 "\tIf you want just single instance available to all clients, e.g database");
             Console.WriteLine(
