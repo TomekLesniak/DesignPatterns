@@ -18,6 +18,13 @@ namespace DesignPatternsLib.Factory
                 "\tIf you don`t know exact types and dependencies of the objects\n\tyour code will work with\n");
             Console.WriteLine("\tIf you want your users to easily extend internal components");
             Console.WriteLine("\tIf you want to reuse existing objects\n");
+            Console.WriteLine("\tHow to implement?");
+            Console.WriteLine("\t1. Make all products follow the same interface. This interface should \n\tdeclare methods that make sense in every product.\n");
+            Console.WriteLine("\t2. Add an empty factory method inside the creator class. The return type \n\tof the method should match the common product interface.\n");
+            Console.WriteLine("\t3. In the creator’s code find all references to product constructors.\r\n\tOne by one, replace them with calls to the factory method,\r\n\twhile extracting the product creation code into the factory method\n");
+            Console.WriteLine("\t4. Now, create a set of creator subclasses for each type of product \r\n\tlisted in the factory method. Override the factory method\r\n\tin the subclasses and extract the appropriate \r\n\tbits of construction code from the base method.\n");
+            Console.WriteLine("\t5. If there are too many product types and it doesn’t make sense\r\n\tto create subclasses for all of them, you can reuse the control\r\n\tparameter from the base class in subclasses.");
+            Console.WriteLine("\t6. If, after all of the extractions, the base factory method has\r\n\tbecome empty, you can make it abstract. If there’s something\r\n\tleft, you can make it a default behavior of the method.\n\n");
             _dialog = new WindowsDialog();
             _dialog.Render();
 
