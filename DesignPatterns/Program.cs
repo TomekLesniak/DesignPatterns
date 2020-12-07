@@ -5,6 +5,7 @@ using DesignPatternsLib.Abstract;
 using DesignPatternsLib.Factory;
 using DesignPatternsLib.Builder;
 using DesignPatternsLib.Prototype;
+using DesignPatternsLib.Structural;
 
 namespace DesignPatterns
 {
@@ -34,6 +35,14 @@ namespace DesignPatterns
 
             #endregion
 
+            #region Structural
+
+            PrintIntroductionTo("STRUCTURAL DESIGN PATTERNS");
+            PrintStructuralTextBetween(1, "Adapter");
+            new Adapter().Run();
+
+            #endregion
+
         }
 
         private static void PrintIntroductionTo(string patternsCategory)
@@ -53,6 +62,12 @@ namespace DesignPatterns
         {
             UseAccentColor();
             Console.WriteLine($"\t\t    CREATIONAL PATTERN {index}/5 - {patternName}");
+            UsePrimaryColor();
+        }
+        private static void PrintStructuralTextBetween(int index, string patternName)
+        {
+            UseAccentColor();
+            Console.WriteLine($"\t\t    STRUCTURAL PATTERN {index}/7 - {patternName}");
             UsePrimaryColor();
         }
 
