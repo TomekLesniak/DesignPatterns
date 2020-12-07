@@ -22,6 +22,13 @@ namespace DesignPatternsLib.Prototype
                 "\tIf you want to copy object without depending on it");
             Console.WriteLine(
             "\tIf you want to provide a prototype registry for frequently used prototypes\n");
+            UseAccentColor();
+            Console.WriteLine("\tHow to implement?");
+            UsePrimaryColor();
+            Console.WriteLine("\t1. Create the prototype interface and declare the clone method\r\n\tin it. Or just add the method to all classes of an existing class\r\n\thierarchy, if you have one.\r\n");
+            Console.WriteLine("\t2. A prototype class must define the alternative constructor that\r\n\taccepts an object of that class as an argument. The constructor\r\n\tmust copy the values of all fields defined in the class from the\r\n\tpassed object into the newly created instance. If you’re changing a subclass, you must call \r\n\tthe parent constructor to let the superclass handle the cloning of its private fields.\n");
+            Console.WriteLine("\t3. The cloning method usually consists of just one line: running\r\n\ta new operator with the prototypical version of the constructor. Note, that every class must explicitly override the cloning\r\n\tmethod and use its own class name along with the new operator. Otherwise, the cloning method may produce an object of\r\n\ta parent class.\n");
+            Console.WriteLine("\t4. Optionally, create a centralized prototype registry to store a\r\n\tcatalog of frequently used prototypes.\r\n\n");
 
             var rectangle = new Rectangle(1, 2, "red", 10, 20);
             var circle = new Circle(15, 12, "blue", 25);
