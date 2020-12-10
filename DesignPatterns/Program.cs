@@ -41,6 +41,9 @@ namespace DesignPatterns
             PrintStructuralTextBetween(1, "Adapter");
             new Adapter().Run();
 
+            PrintStructuralTextBetween(2, "Bridge");
+            new Bridge().Run();
+
             #endregion
 
         }
