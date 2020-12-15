@@ -1,3 +1,3 @@
 # DesignPatterns
 
-Design pattern with explanations
+This is my implementation of GoF deisgn patterns. 
